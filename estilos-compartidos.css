@@ -57,6 +57,7 @@ nav {
     min-height: 40px;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 body {
@@ -85,11 +86,12 @@ article {
 
 @media (max-width: 500px) {
     section {
-        padding: 30px 5px;
+        padding: 30px 0;
     }
     article {
         box-shadow: 0px 1px 8px 0 #000000;
         padding: 25px 10px;
+        border-radius: 0;
     }
 }
 

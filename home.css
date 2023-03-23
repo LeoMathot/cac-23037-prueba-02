@@ -49,8 +49,11 @@ img {
     background-color: #101010;
     border-radius: 10px;
     width: 100%;
+    max-width: 500px;
     max-height: 500px;
-    margin-left: auto;
+    display: block;
+    margin: 0 auto;
+    z-index: 20;
 }
 
 .sec-2 {
@@ -69,6 +72,7 @@ form {
     color: var(--texto-blanco);
     padding: 10px;
     font-size: 1rem;
+    width: 100%;
     max-width: 500px;
     margin: auto;
 }
