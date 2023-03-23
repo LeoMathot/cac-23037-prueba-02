@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icono en pestaña-->
+    <link rel="icon" type="image/png" href="./imagenes/planet-icon.png">
+    <!--links a archivos css-->
+    <link rel="stylesheet" href="./estilos-compartidos.css">
+    <link rel="stylesheet" href="./home.css">
+    <!--google font: cabin-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <title>Pagina de prueba 02</title>
+</head>
+<body>
+    <header>
+        <div class="header-img-cont">
+            <img src="./imagenes/planetas.jpg" alt="planetas">
+        </div>
+        <div class="header-text-cont">
+            <h1>Codo a Codo 23037</h1> 
+        </div>
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <section class="sec-1">
+            <article>
+                <h3>section 1 article 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, quos id officia illo dolor rerum magnam natus nemo repudiandae beatae expedita fugiat reprehenderit in consequuntur placeat vel perferendis impedit asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iure quaerat natus. Amet, odit vel, distinctio ab soluta delectus dolorum, earum repellendus perspiciatis repudiandae veritatis maxime quae sit sequi pariatur?</p>
+            </article>
+            <article>
+                <h3>section 1 article 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut animi suscipit commodi assumenda totam molestias recusandae voluptatibus eius, tempore, voluptas quisquam ab atque quod eligendi praesentium ex maxime debitis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, quos id officia illo dolor rerum magnam natus nemo repudiandae beatae expedita fugiat reprehenderit in consequuntur placeat vel perferendis impedit asperiores.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, quos id officia illo dolor rerum magnam natus nemo repudiandae beatae expedita fugiat reprehenderit in consequuntur placeat vel perferendis impedit asperiores.</p>
+            </article>
+        </section>
+        <section class="sec-2">
+            <article>
+                <h3>section 2 article 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </article>
+            <article>
+                <h3>section 2 article 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut animi suscipit commodi assumenda totam molestias recusandae voluptatibus eius, tempore, voluptas quisquam ab atque quod eligendi praesentium ex maxime debitis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, quos id officia illo dolor rerum magnam natus nemo repudiandae beatae expedita fugiat reprehenderit in consequuntur placeat vel perferendis impedit asperiores.</p>
+            </article>
+        </section>
+        <section class="sec-3">
+            <article>
+                <h3>section 3 article 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, quos id officia illo dolor rerum magnam natus nemo repudiandae beatae expedita fugiat reprehenderit in consequuntur placeat vel perferendis impedit asperiores.</p>
+            </article>
+            <article>
+                <h3>section 3 article 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut animi suscipit commodi assumenda totam molestias recusandae voluptatibus eius, tempore, voluptas quisquam ab atque quod eligendi praesentium ex maxime debitis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, quos id officia illo dolor rerum magnam natus nemo repudiandae beatae expedita fugiat reprehenderit in consequuntur placeat vel perferendis impedit asperiores.</p>
+            </article>
+            <article class="art-form">
+                <h3>section 3 form</h3>
+                <form
+                    ction="submit"
+                    method="POST"
+                    target="_blank">
+
+                    <label for="name" class="question">Your name:</label>
+                    <input id="name" type="text" name="name" required>
+
+                    <label for="email" class="question">Your email:</label>
+                    <input id="email" type="email" name="email" required>
+
+                    <label for="age" class="question">Your age:</label>
+                    <input id="age" type="number" min="13" max="120" name="age" required>
+
+                    <label for="date" class="question">Some date required</label>
+                    <input id="date" type="date" name="date" required>
+
+                    <label id="purpose" for="dropdown" class="question">Dropdown</label>
+
+                    <select id="dropdown" required>
+                        <option value=" "> </option>
+                        <option value="1">Work</option>
+                        <option value="2">Education</option>
+                        <option value="4">Fun</option>
+                        <option value="5">Other</option>
+                    </select>
+                                
+                    <label class="question">Do you know any of these?</label>
+                    <label for="HTML">
+                        <input type="checkbox" id="HTML" name="know" value="HTML"> HTML
+                    </label>
+                    <label for="CSS">
+                        <input type="checkbox" id="CSS" name="know" value="CSS"> CSS
+                    </label>
+                    <label for="JS">
+                        <input type="checkbox" id="JS" name="know" value="JS"> JS
+                    </label>
+
+                    <label class="question">Do you know English?</label>
+                    <label for="english-yes">
+                        <input type="radio" id="english-yes" name="english" value="yes"> Yes
+                    </label>
+                    <label for="english-no">
+                        <input type="radio" id="english-no" name="english" value="no"> No
+                    </label>
+                    
+                    <label for="message" class="question">Your message:</label>
+                    <textarea id="message" name="message" maxlength="300" required></textarea>
+                    
+                    <button type="submit">Send</button>
+
+                </form>
+            </article>
+            <article class="art-iframe">
+                <h3>section 3 iframe</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1522.8260469951051!2d-65.20384179999999!3d-26.8331348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0febbe97db%3A0x65937e9ca09416ef!2sCasa%20Hist%C3%B3rica%20-%20Museo%20Nacional%20de%20la%20Independencia!5e1!3m2!1ses!2sar!4v1679602191280!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia necessitatibus saepe harum vero, maiores adipisci omnis aperiam cum deleniti libero dolore, nesciunt porro sit amet quod qui quo aspernatur laborum!</p>
+    </footer>
+</body>
+</html>
