@@ -107,4 +107,48 @@ article p {
 footer {
     border-top: 2px solid var(--fondo-color-oscuro);
     padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 5vw;
+    row-gap: 30px;
+}
+
+.footer-p {
+    flex: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #909090;
+}
+
+.footer-ul {
+    flex: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-ul ul {
+    list-style: none;
+}
+
+.footer-ul ul li {
+    color: var(--texto-blanco);
+    margin-bottom: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--texto-blanco);
+}
+
+a:hover {
+    color: var(--texto-color-brillante);
+}
+
+.footer-ul ul li img {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 10px
 }
