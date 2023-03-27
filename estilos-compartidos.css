@@ -52,6 +52,13 @@ html {
     background-image: linear-gradient(#303030, #909090 48%, #909090 52%, #202020 100%);
 }
 
+body {
+    background-color: var(--fondo-negro);
+    color: var(--texto-blanco);
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.1rem;
+}
+
 nav {
     background-color: var(--fondo-color-oscuro);
     min-height: 40px;
@@ -90,13 +97,6 @@ nav ul li a:hover {
     nav ul {
         margin-right: 0;
     }
-}
-
-body {
-    background-color: var(--fondo-negro);
-    color: var(--texto-blanco);
-    font-family: 'Cabin', sans-serif;
-    font-size: 1.1rem;
 }
 
 section {
