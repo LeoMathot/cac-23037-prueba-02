@@ -48,6 +48,7 @@ img {
 .sec-1 video {
     background-color: #101010;
     border-radius: 10px;
+    padding: 5px;
     width: 100%;
     max-width: 500px;
     max-height: 500px;
@@ -69,12 +70,14 @@ img {
 }
 
 form {
-    color: var(--texto-blanco);
-    padding: 10px;
-    font-size: 1rem;
+    background-color: #101010;
+    border-radius: 10px;
     width: 100%;
     max-width: 500px;
-    margin: auto;
+    color: var(--texto-blanco);
+    padding: 20px;
+    font-size: 1rem;
+    margin: 0 auto;
 }
 
 form input, form textarea, form select {
@@ -134,7 +137,7 @@ form button:hover {
 @media (max-width: 500px) {
     form {
         max-width: 100%;
-        padding: 5px;
+        padding: 10px;
     }
 }
 
@@ -147,9 +150,14 @@ form button:hover {
 }
 
 iframe {
-    width: inherit;
-    height: 450px;
+    background-color: #101010;
     border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
 }
 
 @media (max-width: 500px) {

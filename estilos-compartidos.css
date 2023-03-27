@@ -58,6 +58,38 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--texto-blanco);
+}
+
+nav ul li a {
+    padding: 5px;
+    margin: 0 10px;
+}
+
+nav ul li a:hover {
+    background-color: var(--fondo-color-transparente);
+}
+
+@media (max-width: 500px) {
+    nav {
+        justify-content: center;
+    }
+    nav ul {
+        margin-right: 0;
+    }
 }
 
 body {
@@ -71,27 +103,36 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 10px;
+    padding: 30px 30px;
 }
 
 article {
-    background-color: var(--fondo-color-transparente);
-    box-shadow: -1px 1px 10px 0 #000000;
-    border-radius: 10px;
-    padding: 30px 15px;
+    padding: 10px 0;
     width: 100%;
     max-width: 700px;
     margin: 20px 0;
 }
 
+.card {
+    background-color: var(--fondo-color-transparente);
+    box-shadow: -1px 1px 10px 0 #000000;
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 100%;
+    max-width: 700px;
+
+}
+
 @media (max-width: 500px) {
     section {
-        padding: 30px 0;
+        padding: 30px 10px;
     }
     article {
-        box-shadow: 0px 1px 8px 0 #000000;
-        padding: 25px 10px;
+        padding: 25px 0;
         border-radius: 0;
+    }
+    .card {
+        box-shadow: 0px 1px 8px 0 #000000;
     }
 }
 
@@ -133,22 +174,21 @@ footer {
 }
 
 .footer-ul ul li {
-    color: var(--texto-blanco);
     margin-bottom: 0.8rem;
 }
 
-a {
-    text-decoration: none;
-    color: var(--texto-blanco);
-}
-
-a:hover {
-    color: var(--texto-color-brillante);
-}
-
 .footer-ul ul li img {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     position: relative;
-    top: 10px
+    top: 6px;
+}
+
+.footer-ul ul a {
+    color: #909090;
+    font-size: 0.9rem;
+}
+
+.footer-ul ul a:hover {
+    color: var(--texto-color-brillante);
 }
