@@ -163,32 +163,18 @@ footer {
     color: #909090;
 }
 
-.footer-ul {
+.footer-links {
     flex: 200px;
     display: flex;
     justify-content: center;
 }
 
-.footer-ul ul {
-    list-style: none;
-}
-
-.footer-ul ul li {
-    margin-bottom: 0.8rem;
-}
-
-.footer-ul ul li img {
-    height: 25px;
-    width: 25px;
-    position: relative;
-    top: 6px;
-}
-
-.footer-ul ul a {
+.footer-links a {
+    padding: 8px;
     color: #909090;
-    font-size: 0.9rem;
+    height: fit-content;
 }
 
-.footer-ul ul a:hover {
+.footer-links a:hover {
     color: var(--texto-color-brillante);
 }
