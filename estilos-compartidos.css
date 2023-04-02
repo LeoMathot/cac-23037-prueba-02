@@ -5,7 +5,7 @@
 }
 
 :root {
-    --fondo-color-claro: #bf64d1;
+    --fondo-color-claro: #d67de7;
     --fondo-color-oscuro: #c00040;
     --fondo-blanco: #f9f9f9;
     --fondo-negro: #262626;
@@ -14,7 +14,7 @@
     --fondo-color-transparente: rgba(60, 0, 30, 0.3);
 
     --texto-color-claro: #ff90f0;
-    --texto-color-brillante: #ff0070;
+    --texto-color-brillante: #ff1c7e;
     --texto-blanco: #f9f9f9;
     --texto-negro: #000000;
 
@@ -55,7 +55,7 @@ html {
 body {
     background-color: var(--fondo-negro);
     color: var(--texto-blanco);
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
 }
 
@@ -74,6 +74,7 @@ nav ul {
     list-style: none;
     display: flex;
     margin-right: 15px;
+    text-align: center;
 }
 
 a {
@@ -97,6 +98,11 @@ nav ul li a:hover {
     nav ul {
         margin-right: 0;
     }
+    nav ul li a {
+        padding: 5px;
+        margin: 0;
+        font-size: 1rem;
+    }
 }
 
 section {
@@ -104,6 +110,14 @@ section {
     flex-direction: column;
     align-items: center;
     padding: 30px 30px;
+}
+
+section:nth-child(odd) {
+    background-color: var(--fondo-negro);
+}
+
+section:nth-child(even) {
+    background-color: var(--fondo-gris);
 }
 
 article {
@@ -146,6 +160,7 @@ article p {
 }
 
 footer {
+    background-color: var(--fondo-negro);
     border-top: 2px solid var(--fondo-color-oscuro);
     padding: 60px 20px;
     display: flex;
@@ -166,7 +181,7 @@ footer {
 .footer-links {
     flex: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .footer-links a {

@@ -1,4 +1,5 @@
 header {
+    position: relative;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -8,11 +9,12 @@ header {
 }
 
 .header-img-cont {
-    background-color: gray;
+    background-color: black;
     width: 100%;
-    height: inherit;
+    height: 100%;
     position: absolute;
     top: 0;
+    left: 0;
     z-index: 10;
 }
 
@@ -25,20 +27,17 @@ img {
 .header-text-cont {
     position: absolute;
     top: 0;
+    left: 0;
     z-index: 20;
     width: 100%;
-    height: inherit;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     text-align: center;
-    padding-bottom: 20vh;
+    font-size: 2rem;
     color: var(--texto-blanco);
     opacity: 0.8;
-}
-
-.sec-1 {
-    background-color: var(--fondo-negro);
 }
 
 .sec-1 h3 {
@@ -57,11 +56,11 @@ img {
     z-index: 20;
 }
 
-.sec-2 {
-    background-color: var(--fondo-gris);
+.sec-2 h3 {
+    color: var(--texto-color-brillante);
 }
 
-.sec-2 p {
+.sec-2 p:nth-child(odd) {
     color: var(--texto-color-claro);
 }
 
@@ -141,12 +140,16 @@ form button:hover {
     }
 }
 
-.sec-3 {
-    background-color: var(--fondo-negro);
-}
-
 .sec-3 h3 {
     color: var(--texto-color-claro);
+}
+
+.sec-4 h3 {
+    color: var(--texto-color-claro);
+}
+
+.art-iframe h3 {
+    color: var(--texto-color-brillante);
 }
 
 iframe {
