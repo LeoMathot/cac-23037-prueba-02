@@ -5,7 +5,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    min-height: 60vh;
+    padding: 20px;
 }
 
 .header-img-cont {
@@ -25,9 +26,6 @@ img {
 }
 
 .header-text-cont {
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 20;
     width: 100%;
     height: 100%;
@@ -35,9 +33,17 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 2rem;
-    color: var(--texto-blanco);
+    font-size: 4.5rem;
+    font-weight: bold;
+    -webkit-text-stroke: 1px var(--texto-blanco);
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
     opacity: 0.8;
+}
+
+.header-text-cont .esp-abajo {
+    display: inline-block;
+    margin-bottom: 30px;
 }
 
 .sec-1 h3 {
@@ -74,7 +80,7 @@ form {
     width: 100%;
     max-width: 500px;
     color: var(--texto-blanco);
-    padding: 20px;
+    padding: 20px 30px;
     font-size: 1rem;
     margin: 0 auto;
 }
@@ -119,7 +125,7 @@ input[type="text"], input[type="email"], input[type="number"], input[type="date"
 
 form button {
     display: block;
-    margin: 40px auto 0 auto;
+    margin: 40px auto 10px auto;
     background-color: var(--fondo-color-claro);
     color: var(--texto-negro);
     border: none;
