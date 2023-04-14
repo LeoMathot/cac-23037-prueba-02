@@ -59,6 +59,54 @@ body {
     font-size: 1.1rem;
 }
 
+header {
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 20px;
+}
+
+.header-img-cont {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-text-cont {
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: bold;
+    -webkit-text-stroke: 1px var(--texto-blanco);
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+    opacity: 0.8;
+}
+
+.header-text-cont .esp-abajo {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
 nav {
     background-color: var(--fondo-color-oscuro);
     min-height: 40px;
@@ -156,6 +204,135 @@ h3 {
 
 article p {
     margin-top: 10px;
+}
+
+.sec-1 h3 {
+    color: var(--texto-color-brillante);
+}
+
+.sec-1 video {
+    background-color: #101010;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+    z-index: 20;
+}
+
+.sec-2 h3 {
+    color: var(--texto-color-brillante);
+}
+
+.sec-2 p:nth-child(odd) {
+    color: var(--texto-color-claro);
+}
+
+.art-form h3 {
+    color: var(--texto-color-brillante);
+}
+
+form {
+    background-color: #101010;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    color: var(--texto-blanco);
+    padding: 20px 30px;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+form input, form textarea, form select {
+    background-color: var(--fondo-color-claro);
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    font-family: 'Cabin', sans-serif;
+    width: 100%;
+    margin: 2px 0;
+    padding: 3px;
+}
+
+form textarea {
+    min-height: 100px;
+}
+
+form input[type="radio"], form input[type="checkbox"] {
+    width: 20px;
+    margin-left: 20px;
+    opacity: 0.3;
+    accent-color: var(--fondo-color-oscuro);
+}
+
+form input[type="radio"]:checked, form input[type="checkbox"]:checked {
+    opacity: 1;
+    filter: saturate(200%);
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="date"], textarea, select, label {
+    display: block;
+}
+
+.question {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+form button {
+    display: block;
+    margin: 40px auto 10px auto;
+    background-color: var(--fondo-color-claro);
+    color: var(--texto-negro);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 5px #000000;
+    padding: 8px;
+}
+
+form button:hover {
+    background-color: var(--fondo-color-oscuro);
+    color: var(--texto-blanco);
+}
+
+@media (max-width: 500px) {
+    form {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+.sec-3 h3 {
+    color: var(--texto-color-claro);
+}
+
+.sec-4 h3 {
+    color: var(--texto-color-claro);
+}
+
+.art-iframe h3 {
+    color: var(--texto-color-brillante);
+}
+
+iframe {
+    background-color: #101010;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+    iframe {
+        height: 300px;
+    }
 }
 
 .fin {
